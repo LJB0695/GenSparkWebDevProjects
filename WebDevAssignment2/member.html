@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Website Design Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+<script defer src="index.js"></script>
+</head>
+<body>
+    <section class="header">
+    <nav>
+        <a href="index.html"><img src="Banner.png"> </a>
+        <div class="links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tiger.html">TIGER</a></li>
+                <li><a href="polarBear.html">POLAR BEAR</a></li>
+                <li><a href="giraffe.html">GIRAFFE</a></li>
+                <li><a href="epenguin.html">EMPEROR PENGUIN</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <form>
+            <h1>Become a member of the zoo!</h1>
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter full name." id="contact-name" onkeyup="validateName()">
+                <span id="name-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter email address." id="contact-email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
+                <span id="phone-error"></span>
+            </div>
+            <button onclick="return validateForm()">Submit</button>
+            <span id="submit-error"></span>
+        </form>
+    </div>
+
+    
+</section>
+<script src="index.js"></script>
+</body>
+</html>
